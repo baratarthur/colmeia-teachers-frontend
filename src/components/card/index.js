@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.scss"
 
 import locationSVG from '../../assets/map-marker-alt-solid.svg'
-import starICO from '../../assets/star-solid.svg'
+import starICO from '../../assets/rating-star.png'
 
 const Card = ({ teacher }) => (
     <div className="card">

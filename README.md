@@ -6,7 +6,7 @@
     </li>
     <li>
         Esta aplicação está disponível em 
-        <a href="https://colmeia-teachers.herokuapp.com/">
+        <a href="https://colmeia-teachers.herokuapp.com/" target="blank" >
             https://colmeia-teachers.herokuapp.com/
         </a>
     </li>
@@ -20,7 +20,7 @@
     <li>Rode o comando <b>npm start</b>.</li>
     <li>
         O browser deve abrir automaticamente, caso isso não aconteça,
-        basta acessar <a href="http://localhost:3000">https://localhost:3000</a>,
+        basta acessar <a href="http://localhost:3000" target="blank" >https://localhost:3000</a>,
         para acessar a aplicação.
     </li>
 </ol>
