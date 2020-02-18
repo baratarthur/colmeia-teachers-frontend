@@ -7,7 +7,7 @@ import starICO from '../../assets/star-solid.svg'
 const Card = ({ teacher }) => (
     <div className="card">
         <div className="card-head">
-            <div className="teacher-img" style={{ backgroundImage: `url(${teacher.imagem})` }} ></div>
+            <div className="teacher-img" style={{ backgroundImage: `url(${teacher.imagem.url})` }} ></div>
             <div className="information" >
                 <h2>{teacher.nome}</h2>
                 Disciplinas
