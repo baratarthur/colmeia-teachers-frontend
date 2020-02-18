@@ -11,10 +11,11 @@ function App() {
 
   useEffect(() => {
     fetchData()
-  }, [teachers])
+  }, [teachers.length])
 
   const fetchData = async () => {
-    setTeachers(await service.get('teachers/all'))
+    const response = await service.get('teachers/all')
+    setTeachers(response.data)
   }
 
   return (

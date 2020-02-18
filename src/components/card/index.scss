@@ -1,9 +1,10 @@
 .card {
-    width: 44%;
+    flex: 1 1 340px;
     margin: 18px 8px;
     border-radius: 8px;
     padding: 16px;
     border: 2px solid grey;
+    max-width: 510px;
 
 
     .card-head {
