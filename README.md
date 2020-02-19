@@ -21,7 +21,7 @@
     <li>
         O browser deve abrir automaticamente, caso isso não aconteça,
         basta acessar <a href="http://localhost:3000" target="blank" >https://localhost:3000</a>,
-        para acessar a aplicação.
+        para testar a aplicação.
     </li>
 </ol>
 
