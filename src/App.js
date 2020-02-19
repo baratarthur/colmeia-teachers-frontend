@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Suspense, lazy } from 'react'
 
-import Card from './components/card'
 import service from './services/api'
+
+const LazyApp = lazy(() => import('./components/list-teachers'))
 
 function App() {
 
@@ -18,34 +19,22 @@ function App() {
     setTeachers(response.data)
   }
 
-  return (
-    <>
-      <div className="search">
-        <label htmlFor="search" >Busca</label>
-        <input 
+  return <>
+    <div className="search">
+      <label htmlFor="search" >Busca</label>
+      <input 
           type="text"
           name="search"
           value={serch}
           onChange={e => setSerchTerm(e.target.value)}
           placeholder="Digite aqui o nome do tutor" />
-      </div>
-
-      <div className="App">
-
-        {serch?
-          teachers
-          .filter(teacher => teacher.nome.toLocaleLowerCase().includes(serch.toLocaleLowerCase()))
-          .map((teacher, i) => (
-            <Card teacher={teacher} key={i} />
-          ))
-        :
-          teachers.map((teacher, i) => (
-            <Card teacher={teacher} key={i} />
-          ))
-        }
-      </div>
-    </>
-  )
+    </div>
+    <Suspense fallback={<h2>Carregando... se demorar demais por favor recarregue a página.</h2>} >
+      <LazyApp 
+        teachers={teachers}
+        serch={serch} />
+    </Suspense>
+  </>
 }
 
 export default App

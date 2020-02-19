@@ -3,7 +3,7 @@
     margin: 18px 8px;
     border-radius: 8px;
     padding: 16px;
-    box-shadow: 0 0 1em grey;
+    box-shadow: 0 0 8px grey;
     max-width: 510px;
 
 
@@ -25,7 +25,7 @@
         .information {
             flex: 1 200px;
             padding: 0 16px;
-            height: 200px;
+            height: 180px;
 
             .materias {
                 list-style-type: none;
@@ -57,7 +57,7 @@
 
         .curriculo {
             padding: 0 16px;
-            height: 200px;
+            height: 220px;
             overflow-y: scroll; 
         }
 
